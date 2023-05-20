@@ -1,0 +1,6 @@
+---
+- name: Start service
+  become: true
+  ansible.builtin.service:
+    name: clickhouse-server
+    state: started
